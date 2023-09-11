@@ -1,0 +1,34 @@
+
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "Rob",
+  "name": "Robinson",
+  "password": "Qwerty",
+  "gender": "male",
+  "location": "Times Street"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"Rob",
+    "password":"Qwerty"
+}
+
+###
+
+POST http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+    "username":"Rob",
+    "oldPassword":"Qwerty",
+    "newPassword":"Scam@2003"
+}
+
